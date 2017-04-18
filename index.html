@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>
+	万科集团类手风琴效果
+</title>
+
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+   <link rel="stylesheet" href="index.css" />
+    <style>
+
+    #content {position:relative; overflow:hidden;}
+    /* 滑块 start */
+    #subjects {height:165px; background-color:#e0e2e4;}
+    #subjects .g-wrap a {position:absolute; top:0; left:100%; width:100%; height:100%; overflow:hidden; -webkit-opacity:1; opacity:1; display:block\9; -webkit-transition:left 300ms, -webkit-opacity 700ms; transition:left 300ms, opacity 700ms;}
+    #subjects .g-wrap .item-1 {z-index:1; background-color:#c8c8c8;}
+    #subjects .g-wrap .item-2 {z-index:2; background-color:#ffd900;}
+    #subjects .g-wrap .item-3 {z-index:3; background-color:#fc433e;}
+    #subjects .g-wrap .item-4 {z-index:4; background-color:#2d2d58;}
+    #subjects .g-wrap a span {position:absolute; background:no-repeat 0 0;}
+    #subjects .g-wrap .p2 {-webkit-opacity:0; opacity:0; display:none\9; -webkit-transition:-webkit-opacity 400ms; transition:opacity 400ms;}
+    #subjects .g-wrap .item-1 .p1 {left:0; top:0; width:493px; height:165px;}
+    #subjects .g-wrap .item-1 .p2 {left:276px; top:68px; z-index:2; width:189px; height:29px;}
+    #subjects .g-wrap .item-2 .p1 {left:61px; top:21px;}
+    #subjects .g-wrap .item-2 .p2 {left:250px; top:26px;}
+    #subjects .g-wrap .item-3 .p1 {left:20px; top:56px; width:77px; height:76px;}
+    #subjects .g-wrap .item-3 .p2 {left:150px; width:282px; height:122px;}
+    #subjects .g-wrap .item-4 .p1 {left:23px; top:54px; width:182px; height:80px;}
+    #subjects .g-wrap .item-4 .p2 {left:227px; top:21px; width:245px; height:122px;}
+
+    /*#subjects*/
+    #subjects .trans a {-webkit-opacity:0; opacity:0; display:none\9;}
+
+    /* 逐个出现 */
+    #subjects .ready .item-2 {transition-delay:150ms; -webkit-transition-delay:150ms; -ms-transition-delay:150ms; -moz-transition-delay:150ms;}
+    #subjects .ready .item-3 {transition-delay:150ms; -webkit-transition-delay:300ms; -ms-transition-delay:300ms; -moz-transition-delay:300ms;}
+    #subjects .ready .item-4 {transition-delay:150ms; -webkit-transition-delay:450ms; -ms-transition-delay:450ms; -moz-transition-delay:450ms;}
+
+    /* 没有指向 */
+    #subjects .state-0 .item-1 {left:0;}
+    #subjects .state-0 .item-2 {left:340px;}
+    #subjects .state-0 .item-3 {left:617px;}
+    #subjects .state-0 .item-4 {left:793px;}
+    /* 指向第一个 */
+    #subjects .state-1 .item-1 {left:0;}
+    #subjects .state-1 .item-2 {left:492px;}
+    #subjects .state-1 .item-3 {left:705px;}
+    #subjects .state-1 .item-4 {left:917px;}
+    #subjects .state-1 .item-1 .p2 {-webkit-opacity:1; opacity:1; display:block\9;}
+    /* 指向第二个 */
+    #subjects .state-2 .item-1 {left:0;}
+    #subjects .state-2 .item-2 {left:212px;}
+    #subjects .state-2 .item-3 {left:705px;}
+    #subjects .state-2 .item-4 {left:917px;}
+    #subjects .state-2 .item-2 .p2 {-webkit-opacity:1; opacity:1; display:block\9;}
+    /* 指向第三个 */
+    #subjects .state-3 .item-1 {left:0;}
+    #subjects .state-3 .item-2 {left:212px;}
+    #subjects .state-3 .item-3 {left:425px;}
+    #subjects .state-3 .item-4 {left:917px;}
+    #subjects .state-3 .item-3 .p2 {-webkit-opacity:1; opacity:1; display:block\9;}
+    /* 指向第四个 */
+    #subjects .state-4 .item-1 {left:0;}
+    #subjects .state-4 .item-2 {left:212px;}
+    #subjects .state-4 .item-3 {left:425px;}
+    #subjects .state-4 .item-4 {left:637px;}
+    #subjects .state-4 .item-4 .p2 {-webkit-opacity:1; opacity:1; display:block\9;}
+    /* 滑块 end */
+    </style>
+</head>
+<body>
+
+    
+    <div id="content">
+
+
+
+
+
+
+
+
+        <div id="subjects">
+            <div class="g-wrap state-0">
+                <a class="item-1" target="_blank" href="javascript:;" idx="1">
+                    <span class="p1"><img src="c58a160d-8092-47b3-83e4-fa8d37b16bb2.jpg" alt=""></span>
+                    <span class="p2" style="left: 350px; top: 21px;"></span>
+                </a>
+                <a class="item-2" target="_blank" href="javascript:;" idx="2">
+                    <span class="p1"><img src="d94d2c0d-3a38-45c9-bf2f-f6804e12a49c.jpg" alt=""></span>
+                    <span class="p2"><img src="6ead2c8e-f430-4407-b7ac-63208aca4d7a.jpg" alt=""></span>
+                </a>
+                <a class="item-3" target="_blank" href="javascript:;" idx="3">
+                    <span class="p1"><img src="ae7ac24a-7c8c-4def-9579-7825ce4b4250.jpg" alt=""></span>
+                    <span class="p2"><img src="9a19119d-ce86-4734-ac21-eeccbe9a587d.jpg" alt=""></span>
+                </a>
+                <a class="item-4" target="_blank" href="javascript:;" idx="4">
+                    <span class="p1"><img src="02b0c63d-4b68-4eba-9359-8bdaada83524.jpg" alt=""></span>
+                    <span class="p2"><img src="1dd49f8c-9a50-4381-8091-544109091213.jpg" alt=""></span>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+<script>
+    $(function() {
+
+       var win = $(window);
+
+        // 滑块控制
+        (function() {
+            var sup   = document.getElementById('subjects').getElementsByTagName('div')[0],
+                items = sup.getElementsByTagName('a'),
+                len   = items.length;
+                // base  = 70,
+                // width_s = parseInt(getComputedStyle(sup).width);
+                // width_i = width_s / len,
+                // left    = null,
+                // style   = null,
+                // lefts = [],  // 普通模式下各元素的位置
+                // styles  = [];
+
+            win.on('load', function() {sup.className = "g-wrap ready state-0";})
+
+            // 存储常用变量, 绑定事件
+            for (var i=0,elem=null; i<len; i++) {
+                elem = items[i];
+                // styles.push(elem.style);
+                // lefts.push(width_i*i);
+                elem.setAttribute('idx', i+1);
+                bind(elem, 'mouseover', hoverOn);
+            }
+            // 元素逐个出现
+            initItems(0, len, 200);
+
+            // 事件绑定函数
+            bind(sup, 'mouseout', function() {
+                // for (i=0; i<len; i++) {
+                    // styles[i].left = lefts[i] + 'px';
+                // }
+                sup.className = "g-wrap state-0";
+            });
+
+            // 控制元素逐个出现
+            function initItems(idx, len, delay) {
+                if (idx === len) return;
+                // style = styles[idx];
+                // style.left = lefts[idx] + "px";
+                // style.opacity = "1";
+                setTimeout(function() {initItems(idx+1, len, delay);}, delay);
+            }
+
+            // 函数绑定
+            function bind (elem, evn, func) {
+                if ('addEventListener' in elem) {
+                    bind = function (elem, evn, func) {elem.addEventListener(evn, func, false);}
+                } else {
+                    bind = function(elem, evn, func) {elem['on'+evn] = func;}
+                }
+                bind(elem, evn, func);
+            }
+
+            //元素 mouseover 事件处理
+            var i = 0, flag = false;
+            function hoverOn() {
+                // for(i=0, flag=false; i<len; i++) {
+                //     temp = items[i];
+                //     style = styles[i];
+                //     if (temp === this) {
+                //         flag = true;
+                //         style.left = lefts[i] - (i*base) + "px";
+                //     } else {
+                //         style.left = lefts[i] + (flag?(len-i)*base:-(i*base)) + "px";
+                //     }
+                // }
+                sup.className = "g-wrap state-" + this.getAttribute('idx');
+            }
+        }());
+
+
+    });
+</script>
+
+
+</body>
+</html>
